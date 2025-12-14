@@ -1,4 +1,5 @@
 #include "core/powerSave.h"
+#include <SD.h>
 #include <interface.h>
 
 /***************************************************************************************
@@ -13,6 +14,8 @@ void _setup_gpio() {
     pinMode(R_BTN, INPUT);
     pinMode(L_BTN, INPUT);
 
+    // const int SDCARD_SS_PIN = 4;
+
     pinMode(CC1101_SS_PIN, OUTPUT);
     pinMode(NRF24_SS_PIN, OUTPUT);
 
@@ -24,10 +27,8 @@ void _setup_gpio() {
     bruceConfig.rfModule = CC1101_SPI_MODULE;
     bruceConfig.irRx = RXLED;
 
-    bruceConfig.colorInverted = 1;
-
-    //bruceConfig.colorInverted = 0;
-    bruceConfig.rotation = 0; // portrait mode for Phantom
+    bruceConfig.colorInverted = 0;
+    // bruceConfig.rotation = 0; // portrait mode for Phantom
 }
 
 /***************************************************************************************
