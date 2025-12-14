@@ -10,8 +10,8 @@
 static const uint8_t TX = 43;
 static const uint8_t RX = 44;
 
-static const uint8_t TXD2 = 1;
-static const uint8_t RXD2 = 2;
+// static const uint8_t TXD2 = 21;
+// static const uint8_t RXD2 = 22;
 
 static const uint8_t SDA = 13;
 static const uint8_t SCL = 15;
@@ -49,16 +49,16 @@ static const uint8_t G46 = 46;
 static const uint8_t ADC1 = 7;
 static const uint8_t ADC2 = 8;
 
-#define RGB_LED 32
+// #define RGB_LED 32
 
-/*#define HAS_RGB_LED 1
-#define RGB_LED 32
+#define HAS_RGB_LED 1
+#define RGB_LED 2
 #define LED_TYPE WS2812B
 #define LED_ORDER GRB
 #define LED_TYPE_IS_RGBW 0
 #define LED_COUNT 16
 
-#define LED_COLOR_STEP 15*/
+#define LED_COLOR_STEP 15
 
 // SERIAL (GPS) dedicated pins
 #define BAD_TX 1
@@ -97,18 +97,23 @@ static const uint8_t ADC2 = 8;
 #define NRF24_SCK_PIN SPI_SCK_PIN
 #define NRF24_MISO_PIN SPI_MISO_PIN
 
-#define FP 1
-#define FM 1
+#define FP 2
+#define FM 2
 #define FG 2
 
 #define HAS_SCREEN 1
-#define ROTATION 0
+#define ROTATION 3
 #define MINBRIGHT 160
 
-#define SDCARD_CS 4
+#define SDCARD_CS 21
+#define SDCARD_SCK 14
+#define SDCARD_MISO 12
+#define SDCARD_MOSI 13
+
+/* MARAUDER MINI SETTING
 #define SDCARD_SCK SPI_SCK_PIN
 #define SDCARD_MISO SPI_MISO_PIN
-#define SDCARD_MOSI SPI_MOSI_PIN
+#define SDCARD_MOSI SPI_MOSI_PIN*/
 #define SUPPORT_TRANSACTIONS
 
 #define GROVE_SDA 33
@@ -120,5 +125,3 @@ static const uint8_t ADC2 = 8;
 #define SPI_SS_PIN 1
 
 #endif /* Pins_Arduino_h */
-
-
