@@ -51,7 +51,7 @@ static const uint8_t SCK = 18;
 #define NRF24_SCK_PIN SPI_SCK_PIN
 #define NRF24_MISO_PIN SPI_MISO_PIN
 
-#define FP 1
+#define FP 2
 #define FM 2
 #define FG 3
 
@@ -62,7 +62,7 @@ static const uint8_t SCK = 18;
 #define USER_SETUP_LOADED 1
 #define ST7789_DRIVER 1
 #define TFT_RGB_ORDER 0
-#define TFT_WIDTH 170
+#define TFT_WIDTH 172
 #define TFT_HEIGHT 320
 #define TFT_BACKLIGHT_ON 1
 #define TFT_BL 6
@@ -121,3 +121,4 @@ static const uint8_t SCK = 18;
 #define IO_EXP_CC_RX 7
 #define IO_EXP_CC_TX 12
 #endif /* Pins_Arduino_h */
+
