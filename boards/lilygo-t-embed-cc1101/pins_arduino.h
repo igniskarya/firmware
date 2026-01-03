@@ -109,12 +109,6 @@ static const uint8_t RX = SERIAL_RX;
 // Fuel Gauge
 #define USE_BQ27220_VIA_I2C
 #define BQ27220_I2C_ADDRESS 0x55
-#ifdef BQ27220_I2C_SDA
-#undef BQ27220_I2C_SDA
-#endif
-#ifdef BQ27220_I2C_SCL
-#undef BQ27220_I2C_SCL
-#endif
 #define BQ27220_I2C_SDA GROVE_SDA
 #define BQ27220_I2C_SCL GROVE_SCL
 
@@ -132,7 +126,7 @@ static const uint8_t RX = SERIAL_RX;
 #define BTN_ACT LOW
 
 // IR
-#define TXLED 2
+#define LED 2
 #define RXLED 1
 #define LED_ON HIGH
 #define LED_OFF LOW
@@ -187,8 +181,8 @@ static const uint8_t SCK = SPI_MISO_PIN;
 static const uint8_t MISO = SPI_SCK_PIN;
 
 // Set Main I2C Bus
-#define GROVE_SDA 44
-#define GROVE_SCL 43
+#define GROVE_SDA 8
+#define GROVE_SCL 18
 static const uint8_t SDA = GROVE_SDA;
 static const uint8_t SCL = GROVE_SCL;
 
@@ -239,10 +233,11 @@ static const uint8_t SCL = GROVE_SCL;
 
 // CC1101#
 #define USE_CC1101_VIA_SPI
-#define CC1101_SW1_PIN 43
-#define CC1101_SW0_PIN 44
-#define CC1101_GDO0_PIN 44
-#define CC1101_SS_PIN 43
+#define CC1101_SW1_PIN -1
+#define CC1101_GDO2_PIN 8
+#define CC1101_SW0_PIN -1
+#define CC1101_GDO0_PIN 18
+#define CC1101_SS_PIN 17
 #define CC1101_MISO_PIN SPI_MISO_PIN
 #define CC1101_MOSI_PIN SPI_MOSI_PIN
 #define CC1101_SCK_PIN SPI_SCK_PIN
@@ -267,10 +262,12 @@ static const uint8_t SCL = GROVE_SCL;
 #define MCLK 39
 
 // Serial
+
 #define SERIAL_TX 43
 #define SERIAL_RX 44
 
-#define ANALOG_BAT_PIN 4
+
+#define BAT_PIN 4
 
 // Encoder
 #define HAS_ENCODER
@@ -285,12 +282,16 @@ static const uint8_t SCL = GROVE_SCL;
 #define BTN_ACT LOW
 
 // IR
-#define TXLED 44
+#define LED 44
 #define RXLED 43
 #define LED_ON HIGH
 #define LED_OFF LOW
 
-// RF Module
+// RFID Module
+// #define DSPI_SS_PIN SPI_SS_PIN
+////#define DSPI_MISO_PIN SPI_MISO_PIN
+////#define DSPI_MOSI_PIN SPI_MOSI_PIN
+// #define DSPI_SCK_PIN SPI_SCK_PIN
 
 // FM
 #define FM_SI4713
