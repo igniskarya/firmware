@@ -38,7 +38,7 @@ jobs:
           #- { env: "LAUNCHER_CYD-2USB",               family: "ESP32",}
           #- { env: "LAUNCHER_CYD-2432W328C",          family: "ESP32",}
           #- { env: "lilygo-t-embed-cc1101",           family: "ESP32-S3",}
-          #- { env: "lilygo-t-embed",                  family: "ESP32-S3",}
+          - { env: "lilygo-t-embed",                  family: "ESP32-S3",}
           #- { env: "lilygo-t-deck",                   family: "ESP32-S3",}
           #- { env: "lilygo-t-watch-s3",               family: "ESP32-S3",}
           #- { env: "lilygo-t-deck-pro",               family: "ESP32-S3",}
@@ -50,7 +50,7 @@ jobs:
           #- { env: "lilygo-t-display-ttgo",           family: "ESP32",}
           #- { env: "lilygo-t-hmi",                    family: "ESP32-S3",}
           #- { env: "lilygo-t-lora-pager",             family: "ESP32-S3",}
-          - { env: "smoochiee-board",                 family: "ESP32-S3",}
+          #- { env: "smoochiee-board",                 family: "ESP32-S3",}
           #- { env: "Phantom_S024R",                   family: "ESP32",}
           #- { env: "LAUNCHER_Phantom_S024R",          family: "ESP32",}
           #- { env: "Marauder-Mini",                   family: "ESP32",}
