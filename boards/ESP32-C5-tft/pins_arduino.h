@@ -85,7 +85,7 @@ static const uint8_t LP_TX = 11;
 #define ST7735_DRIVER 1
 #define TFT_WIDTH 128
 #define TFT_HEIGHT 160
-#define ST7735_GREENTAB2 1
+#define ST7735_GREENTAB3 1
 // // #define TFT_INVERSION_ON
 #define TFT_RGB_ORDER 1
 
