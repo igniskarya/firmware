@@ -76,8 +76,8 @@ static const uint8_t LP_TX = 11;
 
 #define ST7789_DRIVER 1
 #define TFT_RGB_ORDER 0
- #define TFT_WIDTH 170
- #define TFT_HEIGHT 320
+ #define TFT_WIDTH 240
+ #define TFT_HEIGHT 240
 
 /* ---------------------   */
 // Setup for ST7735 128 x 169
@@ -102,7 +102,7 @@ static const uint8_t LP_TX = 11;
 #define TFT_BL 25
 #define TFT_RST -1
 #define TFT_DC 24
-#define TFT_MISO -1 // set to share SPI with other devices
+#define TFT_MISO 2 // set to share SPI with other devices
 #define TFT_MOSI 7
 #define TFT_SCLK 6
 #define TFT_CS 23
