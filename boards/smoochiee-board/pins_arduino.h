@@ -53,7 +53,7 @@ static const uint8_t SCK = 18;
 
 #define FP 1
 #define FM 2
-#define FG 3
+#define FG 2
 
 #define HAS_SCREEN 1
 #define ROTATION 1
@@ -62,7 +62,7 @@ static const uint8_t SCK = 18;
 #define USER_SETUP_LOADED 1
 #define ST7789_DRIVER 1
 #define TFT_RGB_ORDER 0
-#define TFT_WIDTH 170
+#define TFT_WIDTH 172
 #define TFT_HEIGHT 320
 #define TFT_BACKLIGHT_ON 1
 #define TFT_BL 6
@@ -121,3 +121,4 @@ static const uint8_t SCK = 18;
 #define IO_EXP_CC_RX 7
 #define IO_EXP_CC_TX 12
 #endif /* Pins_Arduino_h */
+
