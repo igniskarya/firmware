@@ -233,7 +233,7 @@ void boot_screen() {
     tft.drawPixel(0, 0, bruceConfig.bgColor);
     tft.drawCentreString("DOYA VIVO", tftWidth / 2, 10, 1);
     tft.setTextSize(2);
-    tft.drawCentreString("SMoochie 1.13B", tftWidth / 2, 45, 1);
+    tft.drawCentreString("SMoochie Mini 1.13B", tftWidth / 2, 45, 1);
     tft.setTextSize(FM);
     tft.drawCentreString(
         "PREDATORY FIRMWARE", tftWidth / 2, tftHeight + 2, 1
