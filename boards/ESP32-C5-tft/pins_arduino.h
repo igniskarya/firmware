@@ -46,7 +46,7 @@ static const uint8_t LP_RX = 12;
 static const uint8_t LP_TX = 11;
 
 #define HAS_RGB_LED 1
-#define LED_ORDER GRB
+#define LED_ORDER BRG
 #define LED_TYPE_IS_RGBW 1
 #define LED_COUNT 1
 #define LED_TYPE WS2812
@@ -98,7 +98,7 @@ static const uint8_t LP_TX = 11;
 
 /* ---------------------   */
 // Common TFT definitions
-#define TFT_BACKLIGHT_ON HIGH
+#define TFT_BACKLIGHT_ON 1
 #define TFT_BL 25
 #define TFT_RST -1
 #define TFT_DC 24
@@ -108,7 +108,7 @@ static const uint8_t LP_TX = 11;
 #define TFT_CS 23
 #define TOUCH_CS -1
 #define SMOOTH_FONT 1
-#define SPI_FREQUENCY 27000000
+#define SPI_FREQUENCY 80000000
 #define SPI_READ_FREQUENCY 20000000
 #define SPI_TOUCH_FREQUENCY 2500000
 
