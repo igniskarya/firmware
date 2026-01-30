@@ -46,7 +46,7 @@ static const uint8_t LP_RX = 12;
 static const uint8_t LP_TX = 11;
 
 #define HAS_RGB_LED 1
-#define LED_ORDER BRG
+#define LED_ORDER RGB
 #define LED_TYPE_IS_RGBW 1
 #define LED_COUNT 1
 #define LED_TYPE WS2812
@@ -78,7 +78,6 @@ static const uint8_t LP_TX = 11;
 #define TFT_RGB_ORDER 0
 #define TFT_WIDTH 240
 #define TFT_HEIGHT 240
-#define USE_FSPI_PORT 1
 
 /* ---------------------   */
 // Setup for ST7789 240x320
@@ -87,7 +86,6 @@ static const uint8_t LP_TX = 11;
 // #define TFT_WIDTH=240
 // #define TFT_HEIGHT=320
 // // #define TFT_INVERSION_ON
-// #define TFT_RGB_ORDER=TFT_BGR
 
 /* ---------------------   */
 // Setup for ILI9341 320x240 (no touch)
@@ -98,7 +96,8 @@ static const uint8_t LP_TX = 11;
 
 /* ---------------------   */
 // Common TFT definitions
-#define TFT_BACKLIGHT_ON 1
+#define USE_FSPI_PORT 1
+#define TFT_BACKLIGHT_ON HIGH
 #define TFT_BL 25
 #define TFT_RST -1
 #define TFT_DC 24
@@ -106,9 +105,9 @@ static const uint8_t LP_TX = 11;
 #define TFT_MOSI 7
 #define TFT_SCLK 6
 #define TFT_CS 23
-#define TOUCH_CS -1
+#define TOUCH_CS 1
 #define SMOOTH_FONT 1
-#define SPI_FREQUENCY 80000000
+#define SPI_FREQUENCY 40000000
 #define SPI_READ_FREQUENCY 20000000
 #define SPI_TOUCH_FREQUENCY 2500000
 
