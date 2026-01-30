@@ -74,10 +74,10 @@ static const uint8_t LP_TX = 11;
 /* ---------------------   */
 // Setup for ST7789 170x320
 
-// #define ST7789_DRIVER 1
-// #define TFT_RGB_ORDER 0
-// #define TFT_WIDTH 170
-// #define TFT_HEIGHT 320
+#define ST7789_DRIVER 1
+#define TFT_RGB_ORDER 0
+#define TFT_WIDTH 240
+#define TFT_HEIGHT 240
 
 /* ---------------------   */
 // Setup for ST7789 240x320
@@ -91,13 +91,13 @@ static const uint8_t LP_TX = 11;
 /* ---------------------   */
 // Setup for ILI9341 320x240 (no touch)
 
-#define ILI9341_DRIVER 1
+/*#define ILI9341_DRIVER 1
 #define TFT_HEIGHT 320
-#define TFT_WIDTH 240
+#define TFT_WIDTH 240*/
 
 /* ---------------------   */
 // Common TFT definitions
-#define TFT_BACKLIGHT_ON 1
+#define TFT_BACKLIGHT_ON HIGH
 #define TFT_BL 25
 #define TFT_RST -1
 #define TFT_DC 24
@@ -105,9 +105,9 @@ static const uint8_t LP_TX = 11;
 #define TFT_MOSI 7
 #define TFT_SCLK 6
 #define TFT_CS 23
-#define TOUCH_CS 1
+#define TOUCH_CS -1
 #define SMOOTH_FONT 1
-#define SPI_FREQUENCY 20000000
+#define SPI_FREQUENCY 27000000
 #define SPI_READ_FREQUENCY 20000000
 #define SPI_TOUCH_FREQUENCY 2500000
 
