@@ -78,6 +78,7 @@ static const uint8_t LP_TX = 11;
 #define TFT_RGB_ORDER 0
 #define TFT_WIDTH 240
 #define TFT_HEIGHT 240
+#define USE_FSPI_PORT 1
 
 /* ---------------------   */
 // Setup for ST7789 240x320
