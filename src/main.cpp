@@ -234,7 +234,8 @@ void boot_screen() {
     tft.drawPixel(0, 0, bruceConfig.bgColor);
     tft.drawCentreString("DOYA VIVO", tftWidth / 2, 10, 1);
     tft.setTextSize(2);
-    tft.drawCentreString("BRUCE SMoochie Board", tftWidth / 2, 50, 1);
+    tft.drawCentreString("BRUCE Esp32 C5", tftWidth / 2, 50, 1);
+     tft.drawCentreString("Version 1.14", tftWidth / 2, 65, 1);
     tft.setTextSize(FM);
     tft.drawCentreString(
         "PREDATORY FIRMWARE", tftWidth / 2, tftHeight + 2, 1
