@@ -52,7 +52,7 @@ static const uint8_t ADC2 = 8;
 #define RGB_LED 32
 
 /*#define HAS_RGB_LED 1
-#define RGB_LED 2
+#define RGB_LED 32
 #define LED_TYPE WS2812B
 #define LED_ORDER GRB
 #define LED_TYPE_IS_RGBW 0
@@ -77,7 +77,8 @@ static const uint8_t ADC2 = 8;
 #define BTN_ALIAS "\"Ok\""
 #define BTN_ACT LOW
 
-#define TXLED -1
+#define RXLED 16
+#define LED 17
 #define LED_ON HIGH
 #define LED_OFF LOW
 
@@ -96,23 +97,18 @@ static const uint8_t ADC2 = 8;
 #define NRF24_SCK_PIN SPI_SCK_PIN
 #define NRF24_MISO_PIN SPI_MISO_PIN
 
-#define FP 2
-#define FM 2
-#define FG 2
+#define FP 1
+#define FM 1
+#define FG 1
 
 #define HAS_SCREEN 1
-#define ROTATION 3
+#define ROTATION 2
 #define MINBRIGHT 160
 
-#define SDCARD_CS 21
-#define SDCARD_SCK 14
-#define SDCARD_MISO 12
-#define SDCARD_MOSI 13
-
-/* MARAUDER MINI SETTING
+#define SDCARD_CS 4
 #define SDCARD_SCK SPI_SCK_PIN
 #define SDCARD_MISO SPI_MISO_PIN
-#define SDCARD_MOSI SPI_MOSI_PIN*/
+#define SDCARD_MOSI SPI_MOSI_PIN
 #define SUPPORT_TRANSACTIONS
 
 #define GROVE_SDA 33
