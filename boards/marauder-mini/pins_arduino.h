@@ -77,8 +77,7 @@ static const uint8_t ADC2 = 8;
 #define BTN_ALIAS "\"Ok\""
 #define BTN_ACT LOW
 
-#define RXLED 16
-#define LED 17
+#define TXLED -1
 #define LED_ON HIGH
 #define LED_OFF LOW
 
