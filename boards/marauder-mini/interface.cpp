@@ -24,8 +24,8 @@ void _setup_gpio() {
     digitalWrite(NRF24_SS_PIN, HIGH);
     //  Starts SPI instance for CC1101 and NRF24 with CS pins blocking communication at start
 
-    bruceConfig.rfModule = CC1101_SPI_MODULE;
-    bruceConfig.irRx = RXLED;
+    //bruceConfig.rfModule = CC1101_SPI_MODULE;
+   // bruceConfig.irRx = RXLED;
 
     bruceConfig.colorInverted = 0;
     // bruceConfig.rotation = 0; // portrait mode for Phantom
