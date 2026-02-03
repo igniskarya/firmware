@@ -1,4 +1,5 @@
 #include "core/powerSave.h"
+#include <SD.h>
 #include <interface.h>
 
 /***************************************************************************************
@@ -13,8 +14,21 @@ void _setup_gpio() {
     pinMode(R_BTN, INPUT);
     pinMode(L_BTN, INPUT);
 
+    // const int SDCARD_SS_PIN = 4;
+
+    pinMode(CC1101_SS_PIN, OUTPUT);
+    pinMode(NRF24_SS_PIN, OUTPUT);
+
+    // digitalWrite(SDCARD_SS_PIN, HIGH);
+    digitalWrite(CC1101_SS_PIN, HIGH);
+    digitalWrite(NRF24_SS_PIN, HIGH);
+    //  Starts SPI instance for CC1101 and NRF24 with CS pins blocking communication at start
+
+    bruceConfig.rfModule = CC1101_SPI_MODULE;
+    bruceConfig.irRx = RXLED;
+
     bruceConfig.colorInverted = 0;
-    bruceConfigPins.rotation = 0; // portrait mode for Phantom
+    // bruceConfig.rotation = 0; // portrait mode for Phantom
 }
 
 /***************************************************************************************
@@ -100,6 +114,6 @@ void powerOff() {}
 /*********************************************************************
 ** Function: checkReboot
 ** location: mykeyboard.cpp
-** Btn logic to turn off the device (name is odd btw)
+** Btn logic to tornoff the device (name is odd btw)
 **********************************************************************/
 void checkReboot() {}
