@@ -230,12 +230,12 @@ void begin_tft() {
  *********************************************************************/
 void boot_screen() {
     tft.setTextColor(bruceConfig.priColor, bruceConfig.bgColor);
-    tft.setTextSize(2);
+    tft.setTextSize(3);
     tft.drawPixel(0, 0, bruceConfig.bgColor);
     tft.drawCentreString("DOYA VIVO", tftWidth / 2, 10, 1);
-    tft.setTextSize(1);
-    tft.drawCentreString("BRUCE MARAUDER Mini" , tftWidth / 2, 35, 1);
-     tft.drawCentreString("Version 1.14", tftWidth / 2, 50, 1);
+    tft.setTextSize(2);
+    tft.drawCentreString("BRUCE CYD 3.5" , tftWidth / 2, 45, 1);
+     tft.drawCentreString("Version 1.14", tftWidth / 2, 75, 1);
     tft.setTextSize(FM);
     tft.drawCentreString(
         "PREDATORY FIRMWARE", tftWidth / 2, tftHeight + 2, 1
