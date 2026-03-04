@@ -131,19 +131,19 @@
 #endif
 
 #ifndef SERIAL_TX         // Serial TX used for GPS communications -> To use in other boards
-  #define SERIAL_TX GROVE_SDA
+  #define SERIAL_TX SERIAL_TX
 #endif
 
 #ifndef SERIAL_RX         // Serial RX used for GPS communications -> To use in other boards
-  #define SERIAL_RX GROVE_SCL
+  #define SERIAL_RX SERIAL_RX
 #endif
 
 #ifndef GPS_SERIAL_TX // Serial TX used just for GPS communications
-  #define GPS_SERIAL_TX GROVE_SDA
+  #define GPS_SERIAL_TX SERIAL_TX
 #endif
 
 #ifndef GPS_SERIAL_RX // Serial RX used just for GPS communications
-  #define GPS_SERIAL_RX GROVE_SCL
+  #define GPS_SERIAL_RX SERIAL_RX
 #endif
 
 //This one sets an array to set create the options to devices that have all GPIO available to use (except tft and SD Card)
