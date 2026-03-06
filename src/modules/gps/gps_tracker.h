@@ -34,7 +34,7 @@ private:
     double distance = 0;
     String filename = "";
     TinyGPSPlus gps;
-    HardwareSerial GPSserial = HardwareSerial(2);
+    HardwareSerial GPSserial = HardwareSerial(1);
     int gpsCoordCount = 0;
     bool rxPinReleased = false;
 
