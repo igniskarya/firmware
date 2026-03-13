@@ -234,7 +234,7 @@ void boot_screen() {
     tft.drawPixel(0, 0, bruceConfig.bgColor);
     tft.drawCentreString("DOYA VIVO", tftWidth / 2, 10, 1);
     tft.setTextSize(2);
-    tft.drawCentreString("BRUCE CYD 3.5" , tftWidth / 2, 45, 1);
+    tft.drawCentreString("BRUCE Smoochie" , tftWidth / 2, 45, 1);
      tft.drawCentreString("Version 1.14", tftWidth / 2, 75, 1);
     tft.setTextSize(FM);
     tft.drawCentreString(
