@@ -78,7 +78,7 @@ static const uint8_t LP_TX = 11;
 
 #define ST7789_DRIVER 1
 #define TFT_RGB_ORDER 0
-#define TFT_WIDTH 170
+#define TFT_WIDTH 172
 #define TFT_HEIGHT 320
 
 /* ---------------------   */
@@ -117,7 +117,7 @@ static const uint8_t LP_TX = 11;
 #define LED_ON HIGH
 #define LED_OFF LOW
 // SDCard
-#define SDCARD_CS 23
+#define SDCARD_CS 6
 #define SDCARD_SCK SPI_SCK_PIN
 #define SDCARD_MISO SPI_MISO_PIN
 #define SDCARD_MOSI SPI_MOSI_PIN
